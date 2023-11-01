@@ -1,0 +1,2 @@
+Age: 20
+Selected Genres: 16,80,14,27

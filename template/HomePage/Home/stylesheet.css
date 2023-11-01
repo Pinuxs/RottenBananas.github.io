@@ -1,0 +1,152 @@
+/* Reset some default styles */
+body, ul, li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* Apply a background color */
+body {
+  background-color: #141414;
+  color: #fff;
+  font-family: Arial, sans-serif;
+}
+
+/* Header styles */
+header {
+  background-color: #000;
+  padding: 10px 0;
+  box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+  text-align: center;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  font-size: 16px;
+  transition: color 0.2s;
+}
+
+nav a:hover {
+  color: #e50914;
+}
+
+
+
+/* Main content styles */
+main {
+  padding: 20px;
+}
+
+
+/* Movie cards */
+.movie-cards {
+  display: flex;
+  overflow-x: auto; /* Use "auto" to show the scroll bar when content overflows */
+  width: 100%;
+  white-space: nowrap;
+  -webkit-overflow-scrolling: touch; /* For smooth scrolling on touch devices */
+  scrollbar-width: none; /* Hide the default scroll bar for Firefox */
+  -ms-overflow-style: none; /* Hide the default scroll bar for IE/Edge */
+}
+
+.movie-cards::-webkit-scrollbar {
+  display: none; /* Hide the default scroll bar for Webkit browsers (Chrome, Safari) */
+}
+
+.movie-card {
+  border-radius: 10px;
+  margin: 5px; /* Reduce margin for a smaller card */
+  width: 150px; /* Set a smaller width for each card */
+  min-width: 150px; /* Ensure a minimum width */
+  height: 230px; /* Set a smaller height for each card */
+  min-height: 200px; /* Ensure a minimum height */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: center;
+}
+
+.movie-card img {
+  max-width: 100%; /* Allow images to scale down if they exceed the container width */
+  max-height: 100%; /* Adjust the height of all images */
+  width: auto;
+  height: auto;
+  border-radius: 5px; /* Add a subtle border radius to the image */
+}
+
+.movie-card a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.movie-card:hover {
+  transform: translateY(-5px);
+}
+
+
+/* CSS for the button container */
+.title-and-button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* CSS for the button */
+#myBtn {
+  background-color: #a3a11f;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-weight: bold;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+
+#myBtn:hover {
+    background-color: #a3a11f;
+}
+.overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 1;
+}
+
+.overlay-content {
+  background-color: #141414;
+  text-align: center;
+  max-width: 400px;
+  margin: 10% auto;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+#close-overlay {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}

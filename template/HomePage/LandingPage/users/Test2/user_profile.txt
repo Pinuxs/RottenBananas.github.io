@@ -1,0 +1,2 @@
+Age: 20
+Selected Genres: 18,36,878

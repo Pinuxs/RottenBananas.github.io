@@ -1,0 +1,165 @@
+/* Make the menu sticky */
+.menu {
+  grid-area: menu;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  max-height: calc(100vh - 40px);
+  overflow-y: auto;
+  width: 200px;
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
+  font-family: 'Arial', sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/* Adjust the grid template */
+.grid-container {
+  display: grid;
+  grid-template-areas: 'menu column1 column2 column3'
+                      'menu column1 column2 column3'
+                      'menu column1 column2 column3';
+  gap: 10px;
+  padding: 10px;
+}
+
+/* Specify the grid areas for columns */
+.column1 {
+  grid-area: column1;
+}
+
+.column2 {
+  grid-area: column2;
+}
+
+.column3 {
+  grid-area: column3;
+}
+
+/* Reset some default styles */
+body, ul, li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* Apply a background color */
+body {
+  background-color: #141414;
+  color: #fff;
+  font-family: Arial, sans-serif;
+}
+
+/* Header styles */
+header {
+  background-color: #000;
+  padding: 10px 0;
+  box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+  text-align: center;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  font-size: 16px;
+  transition: color 0.2s;
+}
+
+nav a:hover {
+  color: #e50914;
+}
+
+/* Main content styles */
+main {
+  padding: 20px;
+}
+
+/* Movie List section */
+#movie-list {
+  text-align: center;
+}
+
+#movie-list h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.movie-card {
+  border-radius: 10px;
+  margin: 5px;
+  width: 150px;
+  min-width: 200px;
+  height: 220px; /* Increase the height for larger images */
+  min-height: 220px; /* Ensure a minimum height */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.movie-card img {
+  max-width: 100%;
+  max-height: 100%; /* Increase the max-height for larger images */
+  width: auto;
+  height: auto;
+  border-radius: 5px;
+}
+
+.movie-card a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.movie-card:hover {
+  transform: translateY(-5px);
+}
+
+/* CSS for the button */
+.button {
+  background-color: #a3a11f;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-weight: bold;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+
+.button:hover {
+    background-color: #a3a11f;
+}
+/* Center the button container under Movie Card Column 2 */
+.CenterButton {
+  text-align: center;
+}
+
+/* Style the button container (optional) */
+.button-container {
+  margin-top: 10px; /* Adjust the margin as needed to center vertically */
+}
+
+/* Style the buttons (optional) */
+.button {
+  padding: 10px 20px; /* Adjust padding as needed */
+  background-color: #a3a11f; /* Change button background color */
+  color: #fff; /* Change button text color */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}

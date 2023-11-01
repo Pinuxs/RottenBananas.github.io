@@ -1,0 +1,12 @@
+To start this website follow these steps:
+1. download XAMPP (https://www.apachefriends.org/download.html)
+2. install XAMPP
+3. start Apache
+4. Open XAMPP files
+5. find htdocs
+6. Place website folder inside 
+7. start chrome or edge
+8. copy paste this link (http://localhost/Website/Website/template/HomePage/landingpage/index.html)
+9. sign up or sign in to access website.
+Thank you
+-Rotten Bananas team
